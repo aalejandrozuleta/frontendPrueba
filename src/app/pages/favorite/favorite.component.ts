@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-favorite',
+  standalone: true,
+  imports: [],
   templateUrl: './favorite.component.html',
-  styleUrls: ['./favorite.component.scss']
+  styleUrl: './favorite.component.scss'
 })
-export class FavoriteComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class FavoriteComponent {
 
 }
