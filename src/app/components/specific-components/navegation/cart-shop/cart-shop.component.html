@@ -1,0 +1,11 @@
+<figure id="blockCarshop">
+  <img [src]="carShopImg" alt="" (click)="cartService.openCart()">
+</figure>
+
+<div id="blockCarshopItems" *ngIf="cartService.isCartVisible">
+  <app-header-carShop></app-header-carShop>
+  <div id="contentProductsCarShop">
+    <app-card-car-shop></app-card-car-shop>
+  </div>
+  <app-footer-car-shop></app-footer-car-shop>
+</div>

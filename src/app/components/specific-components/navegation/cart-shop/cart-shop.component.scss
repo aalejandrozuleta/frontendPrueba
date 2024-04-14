@@ -1,0 +1,44 @@
+@import "@sassComponent";
+
+#blockCarshop {
+  @extend %totalSize;
+  @extend %flexCenter;
+  img {
+    width: 40px;
+    height: 100%;
+    filter: invert(100%);
+    cursor: pointer;
+  }
+}
+
+#blockCarshopItems {
+  position: absolute;
+  right: 1%;
+  width: 350px;
+  height: 400px;
+  background-color: map-get($header , "background" );
+  z-index: 1;
+  margin: 0 auto;
+  border-radius: 0 0 20px 20px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 80% 10%;
+
+  #contentProductsCarShop {
+    overflow: hidden;
+    overflow-y: scroll;
+
+    #contentProductsCarShop {
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+    
+    /* Ocultando la barra de desplazamiento para WebKit browsers */
+    &::-webkit-scrollbar {
+      display: none; /* Esto oculta la barra de desplazamiento completamente */
+    }
+    
+  }
+}
+

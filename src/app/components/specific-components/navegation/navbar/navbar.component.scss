@@ -1,0 +1,52 @@
+@import "@sassComponent";
+
+#headerNavbar {
+  background-color: map-get($header, "background");
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 60px;
+  grid-template-columns: 25% 50% 25%;
+
+  #navegationMain {
+    @extend %totalSize;
+  
+    #menuOptionsMain {
+      @extend %gridCenter;
+      grid-template-columns: repeat(3,30%);
+      row-gap: 3%;
+      place-content: center;
+  
+      li {
+        width: 97%;
+        height: 50px;
+        @extend %flexCenter;
+        margin: 4px;
+        border-radius: 10px;
+        // background-color: rgb(99, 99, 99);
+  
+        .imgItem {
+          width: 30%;
+          height: 40%;
+          filter: invert(100%);
+        }
+  
+        a {
+          // text-align: center;
+          width: 70%;
+          text-decoration: none;
+          color: map-get($header, "color");
+          text-transform: capitalize;
+          font-size: 1.2rem;
+        }
+  
+        &:hover {
+          background-color: map-get($header, "hover");
+        }
+      }
+    }
+  }
+}
+
+

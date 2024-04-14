@@ -21,7 +21,17 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "baseUrl": "./", // Asegúrate de que esta línea esté presente
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@sass/*": ["src/app/sass/*"],
+      "@sassComponent": ["src/styles.scss"],
+      "@services/*": ["src/app/shared/services/*"],
+      "@model/*": ["src/app/shared/models/*"],
+      "@common/*": ["src/app/components/common/*"],
+      "@specificComponent/*": ["src/app/components/specific-components/*"],
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

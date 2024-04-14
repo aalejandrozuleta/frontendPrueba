@@ -1,0 +1,12 @@
+<div id="headerNavbar">
+  <app-hamburger-menu></app-hamburger-menu>
+  <nav id="navegationMain">
+    <ul id="menuOptionsMain">
+      <li *ngFor="let item of optionsMenu">
+        <img [src]="item.img" alt="" class="imgItem" />
+        <a [href]="item.url">{{ item.title }}</a>
+      </li>
+    </ul>
+  </nav>
+  <app-cart-shop></app-cart-shop>
+</div>

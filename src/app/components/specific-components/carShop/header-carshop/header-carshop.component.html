@@ -1,0 +1,3 @@
+<div id="headerCarshop">
+  <img *ngFor="let item of imgOptions" [src]="item.img" alt="" (click)="item.action()" class="imgOptions">
+</div>

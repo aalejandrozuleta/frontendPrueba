@@ -1,0 +1,24 @@
+@import "@sassComponent";
+
+.optionProducts {
+  flex-wrap: wrap;
+  @extend %flexCenter;
+  @extend %totalSize;
+
+  .optionButton {
+    width: 40%;
+    height: 35px;
+    margin: 0 5%;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 1px 1px 20px map-get($header, "hover");
+    color: map-get($header , "color" );
+    cursor: pointer;
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: map-get($header, "hover");
+    }
+  }
+}

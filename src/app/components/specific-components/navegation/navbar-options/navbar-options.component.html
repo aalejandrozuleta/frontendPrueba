@@ -1,0 +1,10 @@
+<header *ngIf="menuService.isMenuVisible$ | async">
+  <figure id="closeIcon">
+    <img [src]="closeImg" alt="" (click)="menuService.closeMenu()">
+  </figure>
+  <app-logo-bar></app-logo-bar>
+  <app-search-bar></app-search-bar>
+  <app-options-products></app-options-products>
+  <app-options-filter></app-options-filter>
+  <app-options-session></app-options-session>
+</header>
