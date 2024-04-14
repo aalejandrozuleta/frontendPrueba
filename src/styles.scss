@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+// Importa los archivos de la carpeta 'animate'
+// @import '@sass/animate/.borrar.md';
+
+// Importa los archivos de la carpeta 'colors'
+@import "@sass/colors/_buttonColor.scss";
+@import "@sass/colors/_footerColor.scss";
+@import "@sass/colors/_formColor.scss";
+@import "@sass/colors/_inputColor.scss";
+@import "@sass/colors/_lightColor.scss";
+@import "@sass/colors/_modalsColor.scss";
+@import "@sass/colors/_navegationColor.scss";
+
+// Importa los archivos de la carpeta 'fonts'
+@import "@sass/fonts/fontStyle.scss";
+
+// Importa los archivos de la carpeta 'functions'
+// @import '@sass/functions/.borrar.md';
+
+// Importa los archivos de la carpeta 'inherence'
+@import "@sass/inherence/_flexCenter.scss";
+@import "@sass/inherence/_gridCenter.scss";
+@import "@sass/inherence/_listStyle.scss";
+@import "@sass/inherence/_totalSize.scss";
+
+// Importa los archivos de la carpeta 'mixins'
+@import "@sass/mixins/_buttonStyle.scss";
+@import "@sass/mixins/_cardsStyle.scss";
+@import "@sass/mixins/_formStyle.scss";
+@import "@sass/mixins/_imageStyle.scss";
+@import "@sass/mixins/_inputStyle.scss";
+@import "@sass/mixins/_modalStyle.scss";
+@import "@sass/mixins/_responsive.scss";
+
+// Importa los archivos de la carpeta 'vendors'
+@import "@sass/vendors/resetStyle.scss";
+@import "@sass/vendors/breakpoints.scss";
+

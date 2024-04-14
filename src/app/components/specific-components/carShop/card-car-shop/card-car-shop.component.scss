@@ -1,0 +1,32 @@
+@import '@sassComponent';
+
+.blockCard {
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
+  grid-template-rows: 80px;
+  // border: 2px solid red;
+  place-items: center;
+  row-gap: 2px;
+
+  .imgProductCarShop {
+    @extend %totalSize;
+    object-fit: contain;
+  }
+
+  .blockInformationProduct {
+    height: 100%;
+    @extend %gridCenter;
+    color: map-get($header , "color" );
+    grid-template-rows: repeat(3,30%);
+    place-content: center;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .trashProduct {
+    cursor: pointer;
+    filter:invert(100%);
+  }
+}

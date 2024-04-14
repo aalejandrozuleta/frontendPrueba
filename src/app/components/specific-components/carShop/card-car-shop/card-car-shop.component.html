@@ -1,0 +1,15 @@
+<div class="blockCard" *ngFor="let item of products">
+  <img [src]="item.img" alt="" class="imgProductCarShop">
+  <div class="blockInformationProduct">
+    <p>
+      {{item.nameProduct}}
+    </p>
+    <p>
+      Precio: {{item.price}}
+    </p>
+    <p>
+      Cantidad: {{item.stock}}
+    </p>
+  </div>
+  <img [src]="trashImg" alt="" class="trashProduct">
+</div>

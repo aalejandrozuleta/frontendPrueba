@@ -1,0 +1,10 @@
+<div id="blockOptionFilter">
+  <div class="optionsFilter" *ngFor="let item of optionsFilter; let i = index">
+    <p class="titleFilter">{{ item.title }}</p>
+
+    <div class="blockOption">
+      <input type="range" min="0" max="{{item.options.length - 1}}" [(ngModel)]="item.selectedOption" id="{{'range' + i}}" (change)="updateRangeValue(i)" />
+      <p class="valeOption" id="{{'rangeValue' + i}}">{{ item.options[item.selectedOption] }}</p>
+    </div>
+  </div>
+</div>
