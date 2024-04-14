@@ -3,7 +3,7 @@
   <nav id="navegationMain">
     <ul id="menuOptionsMain">
       <li *ngFor="let item of optionsMenu">
-        <img [src]="item.img" alt="" class="imgItem" />
+        <img [src]="item.img" alt="" class="imgItem" [routerLink]="item.url" />
         <a [href]="item.url">{{ item.title }}</a>
       </li>
     </ul>

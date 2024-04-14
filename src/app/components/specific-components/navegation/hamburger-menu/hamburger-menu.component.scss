@@ -1,13 +1,13 @@
+@import "@sassComponent";
 #blockHamburger {
-  display: flex;
-  justify-items: center;
+  @extend %flexCenter;
   width: 30%;
   height: 100%;
   
   img {
     margin-left: 20px;
     width: 40px;
-    height: 100%;
+    height: 60%;
     filter: invert(100%);
     cursor: pointer;
   }
