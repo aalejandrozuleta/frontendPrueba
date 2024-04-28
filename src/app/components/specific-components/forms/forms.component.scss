@@ -1,0 +1,27 @@
+
+@import "@sassComponent";
+#formBlock {
+  position: relative;
+  top: 70px;
+  @extend %totalSize;
+  height: 100vh;
+  @extend %gridCenter;
+
+  .contenForm {
+    width: 60%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    background-color: blue;
+    border-radius: 20px;
+    box-shadow: 2px 3px 20px map-get($header , "hover" );
+
+    #blockImg {
+      @extend %totalSize;
+
+      img {
+        @extend %totalSize;
+      }
+    }
+  }
+}
