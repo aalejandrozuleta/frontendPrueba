@@ -1,3 +1,12 @@
-<ng-container *ngFor="let input of formInputs">
-  <input [type]="input.type" [name]="input.name" [placeholder]="input.placeholder" [required]="input.required" [minLength]="input.minLength" [maxLength]="input.maxLength">
-</ng-container>
+<div class="inputsBlock">
+  <ng-container *ngFor="let input of formInputs">
+    <input
+      [type]="input.type"
+      [name]="input.name"
+      [placeholder]="input.placeholder"
+      [required]="input.required" 
+      minlength="input.minLength" 
+      maxlength="input.maxLength" 
+    />
+  </ng-container>
+</div>

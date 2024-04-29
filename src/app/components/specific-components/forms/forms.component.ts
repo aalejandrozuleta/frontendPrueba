@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { InputsComponent } from '@specificComponent/inputs/inputs.component';
 
 
+
 @Component({
   selector: 'app-forms',
   standalone: true,
