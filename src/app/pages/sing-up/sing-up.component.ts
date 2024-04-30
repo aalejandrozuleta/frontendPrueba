@@ -1,9 +1,10 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsComponent } from '@specificComponent/forms/forms.component';
 @Component({
   selector: 'app-sing-up',
   standalone: true,
-  imports: [FormsComponent],
+  imports: [FormsComponent,HttpClientModule],
   templateUrl: './sing-up.component.html',
   styleUrl: './sing-up.component.scss'
 })

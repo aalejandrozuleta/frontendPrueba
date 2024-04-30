@@ -1,9 +1,9 @@
-// form-config.ts
 export const FORM_CONFIG = {
   signUp: [
     {
       type: 'text',
       name: 'name_user',
+      model:'',
       placeholder: 'Ingrese su nombre',
       required: true,
       minLength: 3,
@@ -12,6 +12,7 @@ export const FORM_CONFIG = {
     {
       type: 'text',
       name: 'lastName_user',
+      model:'',
       placeholder: 'Ingrese su apellido',
       required: true,
       minLength: 3,
@@ -20,6 +21,7 @@ export const FORM_CONFIG = {
     {
       type: 'text',
       name: 'country_user',
+      model:'',
       placeholder: 'Ingrese su país',
       required: true,
       minLength: 3,
@@ -28,6 +30,7 @@ export const FORM_CONFIG = {
     {
       type: 'text',
       name: 'phone_user',
+      model:'',
       placeholder: 'Ingrese su numero telefónico',
       required: true,
       minLength: 11,
@@ -36,6 +39,7 @@ export const FORM_CONFIG = {
     {
       type: 'email',
       name: 'email_user',
+      model:'',
       placeholder: 'Ingrese su correo',
       required: true,
       minLength: 5,
@@ -44,6 +48,7 @@ export const FORM_CONFIG = {
     {
       type: 'password',
       name: 'password_user',
+      model:'',
       placeholder: 'Ingrese su contraseña',
       required: true,
       minLength: 8,
@@ -52,6 +57,7 @@ export const FORM_CONFIG = {
     {
       type: 'text',
       name: 'user_type',
+      model:'',
       placeholder: 'Ingrese el tipo de usuario',
       required: true,
       minLength: 4,

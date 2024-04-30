@@ -5,5 +5,5 @@ export interface registerUserDto {
   phone_user: string;
   email_user: string;
   password_user: string;
-  user_type:  'Usuario' | 'Comerciante';
+  user_type: string;
 }
