@@ -1,0 +1,10 @@
+@import "@sassComponent";
+.inputsBlock{
+  @extend %totalSize;
+  @extend %flexCenter;
+  flex-direction: column;
+  gap: 10px 0;
+  input {
+    @include inputStyle(70%);
+  }
+}

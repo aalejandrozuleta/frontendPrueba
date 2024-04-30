@@ -1,0 +1,18 @@
+<section id="formBlock">
+  <div class="contenForm">
+    <figure id="blockImg">
+      <img [src]="formImage" alt="Form Image">
+    </figure>
+    <form class="forms" (ngSubmit)="onSubmit(form)" #form="ngForm">
+      <div class="titleForm">
+        <h2>{{ formTitle }}</h2>
+      </div>
+      <div class="inputsForm">
+        <app-inputs></app-inputs> 
+      </div>
+      <div id="btnOption">
+        <input type="submit" [value]="optionMenu">
+      </div>
+    </form>
+  </div>
+</section>

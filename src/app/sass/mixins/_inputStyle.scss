@@ -1,0 +1,16 @@
+@mixin inputStyle($width: 100%, $height: 35px) {
+  width: $width;
+  height: $height;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  
+  &::placeholder {
+    color: rgb(0, 0, 0);
+  }
+
+  &:hover {
+    box-shadow: 2px 2px 20px map-get($inputColor , "boxShadow" );
+    transition: .3s ease-in ;
+  }
+}

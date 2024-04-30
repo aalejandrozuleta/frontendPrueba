@@ -1,0 +1,66 @@
+@import "@sassComponent";
+#formBlock {
+  position: relative;
+  top: 70px;
+  @extend %totalSize;
+  height: 90vh;
+  @extend %gridCenter;
+  background-image: url('@assets/img/backgroundForms.jpg');
+
+  .contenForm {
+    width: 65%;
+    height: 85%;
+    display: grid;
+    grid-template-columns: 45% 56%;
+    border-radius: 20px;
+    box-shadow: 4px 2px 20px map-get($formColors , "boxShadow" );
+    gap: 20px;
+    background-color: map-get($formColors , "backgroundColor" );
+    #blockImg {
+      @extend %totalSize;
+      @extend %flexCenter;
+
+      img {
+        height: 80%;
+        width: 80%;
+        padding: 20px;
+      }
+    }
+  }
+  .forms {
+    @include formStyle;
+
+    .titleForm {
+      @extend %totalSize;
+      @extend %flexCenter;
+      h2 {
+        font-size: 1.7rem;
+        font-weight: bold;
+        font-style: italic;
+        color: map-get($formColors , "titleForm" );
+        text-shadow: 1px 1px 20px map-get($formColors , "textShadow" );
+        text-transform: capitalize;
+      }
+    }
+    #btnOption {
+      @extend %totalSize;
+      @extend %flexCenter;
+      input {
+        border-radius: 20px;
+        border: none;
+        width: 150px;
+        height: 40px;
+        background-color: map-get($formColors , "btnBackground" );
+        cursor: pointer;
+        color: map-get($formColors , "btnColor" );
+        font-size: .9rem;
+
+        &:hover {
+          transition: .5s ease-in-out;
+          box-shadow: 2px 2px 10px map-get($formColors , "btnShadow" );
+        }
+      }
+    }
+
+  }
+}
