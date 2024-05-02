@@ -8,12 +8,12 @@ import { environment } from '../../../environments/environment.prod';
 })
 export class UserService {
 
-  private baseUrl: string = environment.API_URL + '/api/users';
+  private baseUrl: string = environment.API_URL + 'api/users';
 
   constructor(private http: HttpClient) { }
 
   registerUser(userData: registerUserDto) {
     console.log(userData);
-    return this.http.post(`${this.baseUrl}register`, userData, { withCredentials: true });
+    return this.http.post(`${this.baseUrl}/register`, userData, { withCredentials: true });
   }
 }
