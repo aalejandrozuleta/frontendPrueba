@@ -14,6 +14,6 @@ export class UserService {
 
   registerUser(userData: registerUserDto) {
     console.log(userData);
-    return this.http.post(`${this.baseUrl}/register`, userData);
+    return this.http.post(`${this.baseUrl}/register`, userData, { withCredentials: true });
   }
 }
